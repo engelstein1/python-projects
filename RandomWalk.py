@@ -1,3 +1,4 @@
+# with doc
 import random
 import matplotlib.pyplot as plt
 
