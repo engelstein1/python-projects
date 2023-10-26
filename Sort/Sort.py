@@ -1,7 +1,5 @@
 import random
-
-
-# from tqdm import tqdm
+from tqdm import tqdm
 
 
 def partition(array, start, end):
@@ -25,13 +23,14 @@ def quick_sort(array):
     quick_sort_recursion(array, 0, len(array) - 1)
 
 
-a = [-3, -17, 4, 6, 78, -20]
-print(a)
-quick_sort(a)
-print(a)
+# a = [-3, -17, 4, 6, 78, -20]
+# print(a)
+# quick_sort(a)
+# print(a)
+
 
 def test(sorting_function, num_of_tests):
-    for _ in range(num_of_tests):
+    for _ in tqdm(range(num_of_tests)):
         random_length = random.randint(0, 1000)
         random_list = [random.randint(-2000, 2000) for _ in range(random_length)]
         copy = random_list[:]
